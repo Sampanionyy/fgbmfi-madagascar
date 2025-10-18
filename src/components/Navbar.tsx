@@ -38,7 +38,7 @@ const Navbar = () => {
             hasDropdown: true,
             dropdownLinks: [
                 { label: 'Ecole de La Vision', href: '/ecole-de-la-vision' },
-                { label: 'Nos Services', href: '/services' },
+                { label: 'FGBMFI Ladies', href: '/fgbmfi-ladies' },
             ]
         },
         { label: 'Devenir membre', hasDropdown: false },
