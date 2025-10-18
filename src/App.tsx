@@ -9,6 +9,7 @@ import EventDetails from "./components/EventDetails";
 import Story from "./pages/Story";
 import AboutUs from "./pages/AboutUs";
 import HowItWorks from "./pages/HowItWorks";
+import EcoleDeLaVision from "./pages/EcoleDeLaVision";
 
 export default function App() {
     return (
@@ -31,6 +32,8 @@ export default function App() {
                     <Route path="/story" element={<Story />} />
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/how-it-works" element={<HowItWorks />} />
+                    <Route path="/ecole-de-la-vision" element={<EcoleDeLaVision />} />
+
                 </Routes>
                 <Footer />
             </div>
