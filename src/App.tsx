@@ -8,6 +8,7 @@ import Events from "./pages/Events";
 import EventDetails from "./components/EventDetails";
 import Story from "./pages/Story";
 import AboutUs from "./pages/AboutUs";
+import HowItWorks from "./pages/HowItWorks";
 
 export default function App() {
     return (
@@ -29,6 +30,7 @@ export default function App() {
                     <Route path="/events/:id" element={<EventDetails />} />
                     <Route path="/story" element={<Story />} />
                     <Route path="/about-us" element={<AboutUs />} />
+                    <Route path="/how-it-works" element={<HowItWorks />} />
                 </Routes>
                 <Footer />
             </div>

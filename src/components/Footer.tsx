@@ -1,10 +1,21 @@
 import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
 
 const Footer = () => {
-    const footerLinks = {
-        "À propos": ["Notre histoire", "Notre mission", "Témoignages"],
-        "Chapitres": ["Trouver un chapitre", "Créer un chapitre", "Événements"],
-        "Communauté": ["Devenir membre", "Blog", "Contact"],
+    const footerLinks: Record<string, { name: string; href: string }[]> = {
+        "À propos": [
+            { name: "Notre histoire", href: "/story" },
+            { name: "Notre mission", href: "/about-us" },
+            { name: "Témoignages", href: "/testimony" },
+        ],
+        "Chapitres": [
+            { name: "Trouver un chapitre", href: "/chapters" },
+            { name: "Événements", href: "/events" },
+        ],
+        "Communauté": [
+            { name: "Devenir membre", href: "/register" },
+            { name: "Blog", href: "/blog" },
+            { name: "Contact", href: "/contact" },
+        ],
     };
 
     return (
@@ -15,7 +26,6 @@ const Footer = () => {
                     <div className="md:col-span-2">
                         <div className="flex items-center mb-4">
                             <img src="/fbg-logo.png" alt="FGBMFI Logo" className="w-10 h-10 mr-3" />
-                            
                             <div className="ml-3">
                                 <div className="text-white font-bold">FGBMFI-MADAGASCAR</div>
                                 <div className="text-secondary text-xs">Full Gospel Business Men</div>
@@ -44,8 +54,11 @@ const Footer = () => {
                             <ul className="space-y-2">
                                 {links.map((link, idx) => (
                                     <li key={idx}>
-                                        <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                            {link}
+                                        <a
+                                            href={link.href}
+                                            className="text-gray-400 hover:text-white transition-colors"
+                                        >
+                                            {link.name}
                                         </a>
                                     </li>
                                 ))}
@@ -77,11 +90,6 @@ const Footer = () => {
                     <p className="text-gray-400 text-sm">
                         © 2025 FGBMFI-MADAGASCAR. Tous droits réservés.
                     </p>
-                    <div className="flex gap-6 text-sm text-gray-400">
-                        <a href="#" className="hover:text-white transition-colors">Politique de confidentialité</a>
-                        <a href="#" className="hover:text-white transition-colors">Conditions d'utilisation</a>
-                        <a href="#" className="hover:text-white transition-colors">Mentions légales</a>
-                    </div>
                 </div>
             </div>
         </footer>

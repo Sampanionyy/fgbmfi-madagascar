@@ -16,6 +16,7 @@ const Navbar = () => {
 
     const navItems = [
         { label: 'A propos de nous', hasDropdown: true },
+        { label: 'A découvrir', hasDropdown: true },
         { label: 'Devenir membre', hasDropdown: false },
         { label: 'Blog', hasDropdown: false }
     ];
@@ -49,7 +50,7 @@ const Navbar = () => {
                                             <a href="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Evènements</a>
                                             <a href="/story" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Notre Histoire</a>
                                             <a href="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Qui sommes-nous ?</a>
-                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Comment ça marche ?</a>
+                                            <a href="/how-it-works" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Comment ça marche ?</a>
                                         </div>
                                     )}
                                 </div>
