@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, Mail, Phone, Users, ArrowLeft, Ticket, Share2, Heart } from 'lucide-react';
+import { Calendar, MapPin, Clock, Mail, Phone, Users, ArrowLeft, Ticket } from 'lucide-react';
 import { eventsData } from '../data/event-data';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -160,7 +160,6 @@ const EventDetails = () => {
                                                 {event.contact.phone.map((phone, index) => (
                                                     <a
                                                         key={index}
-                                                        href={`tel:${phone.replace(/\s/g, '')}`}
                                                         className="block text-primary hover:text-primary/80 font-medium"
                                                     >
                                                         {phone}
@@ -204,10 +203,15 @@ const EventDetails = () => {
 
                             {/* Action Buttons */}
                             <div className="space-y-3">
-                                <button className={`w-full bg-gradient-to-r ${event.color} text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3`}>
+                                <a
+                                    href="https://wa.me/261340034348"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`w-full bg-gradient-to-r ${event.color} text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3`}
+                                >
                                     <Ticket className="w-6 h-6" />
                                     S'inscrire maintenant
-                                </button>                                
+                                </a>                                
                             </div>
 
                             {/* Quick Info */}

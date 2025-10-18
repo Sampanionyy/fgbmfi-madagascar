@@ -9,6 +9,7 @@ const Events = () => {
     const navigate = useNavigate();
 
     const handleEventClick = (eventId: string) => {
+        console.log({hoveredEvent})
         navigate(`/events/${eventId}`);
     };
 

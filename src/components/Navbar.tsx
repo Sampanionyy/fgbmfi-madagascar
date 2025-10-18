@@ -1,4 +1,4 @@
-import { ChevronDown, Facebook, Instagram, Menu, X, Youtube } from "lucide-react";
+import { ChevronDown, Facebook, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -82,6 +82,14 @@ const Navbar = () => {
 
                     {/* Social & Actions */}
                     <div className="hidden md:flex items-center gap-4">
+                       <a 
+                            href="https://www.facebook.com/profile.php?id=100076470345665" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-gray-600 hover:text-primary transition-colors"
+                        >
+                            <Facebook className="w-5 h-5" />
+                        </a>
                         <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                             Voir nos témoignages
                         </button>

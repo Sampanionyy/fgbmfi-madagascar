@@ -8,11 +8,11 @@ const Footer = () => {
             { name: "Témoignages", href: "/testimony" },
         ],
         "Chapitres": [
-            { name: "Trouver un chapitre", href: "/chapters" },
+            { name: "Trouver un chapitre", href: "/about-us" },
             { name: "Événements", href: "/events" },
         ],
         "Communauté": [
-            { name: "Devenir membre", href: "/register" },
+            { name: "Devenir membre", href: "/join-us" },
         ],
     };
 
