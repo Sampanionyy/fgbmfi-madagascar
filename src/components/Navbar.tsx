@@ -48,7 +48,7 @@ const Navbar = () => {
                                         <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                                             <a href="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Evènements</a>
                                             <a href="/story" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Notre Histoire</a>
-                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Qui sommes-nous ?</a>
+                                            <a href="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Qui sommes-nous ?</a>
                                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">Comment ça marche ?</a>
                                         </div>
                                     )}

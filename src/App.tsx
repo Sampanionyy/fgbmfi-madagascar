@@ -7,6 +7,7 @@ import QuickActions from "./components/QuickActions";
 import Events from "./pages/Events";
 import EventDetails from "./components/EventDetails";
 import Story from "./pages/Story";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
     return (
@@ -27,6 +28,7 @@ export default function App() {
                     <Route path="/events" element={<Events />} />
                     <Route path="/events/:id" element={<EventDetails />} />
                     <Route path="/story" element={<Story />} />
+                    <Route path="/about-us" element={<AboutUs />} />
                 </Routes>
                 <Footer />
             </div>
