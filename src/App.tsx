@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import QuickActions from "./components/QuickActions";
 import Events from "./pages/Events";
 import EventDetails from "./components/EventDetails";
+import Story from "./pages/Story";
 
 export default function App() {
     return (
@@ -25,6 +26,7 @@ export default function App() {
                     />
                     <Route path="/events" element={<Events />} />
                     <Route path="/events/:id" element={<EventDetails />} />
+                    <Route path="/story" element={<Story />} />
                 </Routes>
                 <Footer />
             </div>
