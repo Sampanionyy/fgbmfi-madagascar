@@ -13,8 +13,6 @@ const Footer = () => {
         ],
         "Communauté": [
             { name: "Devenir membre", href: "/register" },
-            { name: "Blog", href: "/blog" },
-            { name: "Contact", href: "/contact" },
         ],
     };
 
@@ -76,7 +74,7 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center gap-3">
                             <Mail className="w-5 h-5 text-secondary" />
-                            <span className="text-gray-400">fgbmfimg@gmail.com</span>
+                            <span className="text-gray-400">fgbmfi.madagascar@gmail.com</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <Phone className="w-5 h-5 text-secondary" />

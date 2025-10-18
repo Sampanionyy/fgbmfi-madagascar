@@ -3,7 +3,6 @@ import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
-import QuickActions from "./components/QuickActions";
 import Events from "./pages/Events";
 import EventDetails from "./components/EventDetails";
 import Story from "./pages/Story";
@@ -11,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import HowItWorks from "./pages/HowItWorks";
 import EcoleDeLaVision from "./pages/EcoleDeLaVision";
 import FgbmfiLadies from "./pages/FgbmfiLadies";
+import JoinUs from "./pages/JoinUs";
 
 export default function App() {
     return (
@@ -23,7 +23,6 @@ export default function App() {
                         element={
                             <>
                                 <HeroSection />
-                                <QuickActions />
                                 <AboutSection />
                             </>
                         }
@@ -35,7 +34,7 @@ export default function App() {
                     <Route path="/how-it-works" element={<HowItWorks />} />
                     <Route path="/ecole-de-la-vision" element={<EcoleDeLaVision />} />
                     <Route path="/fgbmfi-ladies" element={<FgbmfiLadies />} />
-
+                    <Route path="/join-us" element={<JoinUs />} />
                 </Routes>
                 <Footer />
             </div>

@@ -95,21 +95,6 @@ const Events = () => {
                     </div>
                 </div>
             </section>
-
-            {/* Info CTA */}
-            <section className="py-20 bg-gradient-to-br from-surface/50 to-white">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                        Ne manquez aucun événement
-                    </h2>
-                    <p className="text-lg text-gray-600 mb-8">
-                        Inscrivez-vous à notre newsletter pour recevoir toutes les invitations et actualités
-                    </p>
-                    <button className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                        S'inscrire à la newsletter
-                    </button>
-                </div>
-            </section>
         </div>
     );
 };

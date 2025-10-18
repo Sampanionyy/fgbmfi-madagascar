@@ -3,17 +3,31 @@
 @layer base, components, utilities;
 
 @theme {
-  /* === Palette FGBMFI === */
-  --color-primary: #C00000;     /* Rouge */
-  --color-secondary: #FFD700;   /* Or */
-  --color-accent: #007A3D;      /* Vert */
-  --color-background: #FFFFFF;  /* Blanc */
-  --color-surface: #E5E5E5;     /* Gris clair */
-  --color-text: #000000;        /* Texte noir */
+    /* === Palette FGBMFI === */
+    --color-primary: #C00000;
+    /* Rouge */
+    --color-secondary: #FFD700;
+    /* Or */
+    --color-accent: #007A3D;
+    /* Vert */
+    --color-background: #FFFFFF;
+    /* Blanc */
+    --color-surface: #E5E5E5;
+    /* Gris clair */
+    --color-text: #000000;
+    /* Texte noir */
 
-  /* Optionnel : typographie ou autres tokens */
-  --font-display: "Satoshi", "sans-serif";
-  --breakpoint-3xl: 120rem;
-  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
-  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+    /* Typographie */
+    --font-display: "Montserrat", "serif";
+    --breakpoint-3xl: 120rem;
+    --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+    --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+    body {
+        font-family: var(--font-display);
+        background-color: var(--color-background);
+        color: var(--color-text);
+    }
 }

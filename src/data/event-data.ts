@@ -13,7 +13,7 @@ export const eventsData: IEvent[] = [
         price: "15 000 Ar",
         rsvp: "avant le 22/10/2025 à 12h",
         contact: {
-            email: "fgbmfimg@gmail.com",
+            email: "fgbmfi.madagascar@gmail.com",
             phone: ["034 00 343 48", "033 79 70 289"]
         },
         image: "/business-break-ikianja.jpg",
