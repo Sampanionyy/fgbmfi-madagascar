@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Calendar, MapPin, Clock, ArrowRight, Sparkles } from 'lucide-react';
 import { eventsData } from '../data/event-data';
 import { useNavigate } from "react-router-dom";
+import ReusableHero from '../components/ReusableHero';
 
 const Events = () => {
     const [hoveredEvent, setHoveredEvent] = useState<string | null>(null);
@@ -13,37 +14,16 @@ const Events = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-white to-surface/30">
-            {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-primary via-primary/95 to-accent text-white py-24 overflow-hidden">
-                <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-                </div>
+            <ReusableHero
+                variant="events"
+                badge="Événements à venir"
+                icon="calendar"
+                title="Nos Prochains"
+                subtitle="Événements"
+                description="Rejoignez-nous pour des moments de communion, de partage et de croissance spirituelle."
+                centered
+            />
 
-                <div className="relative max-w-7xl mx-auto px-4 text-center">
-                    <div className="inline-block bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full mb-6 border border-white/20">
-                        <span className="text-secondary font-semibold flex items-center gap-2 justify-center">
-                            <Calendar className="w-5 h-5" />
-                            Événements à venir
-                        </span>
-                    </div>
-
-                    <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                        Nos Prochains
-                        <span className="block text-secondary mt-2">Événements</span>
-                    </h1>
-
-                    <p className="text-xl text-white/90 max-w-2xl mx-auto">
-                        Rejoignez-nous pour des moments de communion, de partage et de croissance spirituelle
-                    </p>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0">
-                    <svg viewBox="0 0 1440 120" className="w-full h-auto">
-                        <path fill="#FFFFFF" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
-                    </svg>
-                </div>
-            </section>
 
             {/* Events Grid */}
             <section className="py-16 -mt-20 relative z-10">
