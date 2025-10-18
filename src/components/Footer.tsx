@@ -2,10 +2,9 @@ import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react"
 
 const Footer = () => {
     const footerLinks = {
-        "À propos": ["Notre histoire", "Notre mission", "Leadership", "Témoignages"],
-        "Chapitres": ["Trouver un chapitre", "Créer un chapitre", "Événements", "Ressources"],
-        "Communauté": ["Devenir membre", "Partenariats", "Blog", "Contact"],
-        "Ressources": ["Documentation", "Formations", "Médias", "FAQ"]
+        "À propos": ["Notre histoire", "Notre mission", "Témoignages"],
+        "Chapitres": ["Trouver un chapitre", "Créer un chapitre", "Événements"],
+        "Communauté": ["Devenir membre", "Blog", "Contact"],
     };
 
     return (
