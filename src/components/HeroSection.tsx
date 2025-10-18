@@ -7,8 +7,14 @@ const HeroSection = () => {
             subtitle="FGBMFI-MADAGASCAR"
             description="Une communauté d'hommes d'affaires chrétiens unis dans la foi, le témoignage et le service."
             buttons={{
-                primary: { label: "Rejoindre un chapitre" },
-                secondary: { label: "En savoir plus" },
+                primary: { 
+                    label: "Rejoindre un chapitre", 
+                    onClick: () => window.location.href = "/join-us"
+                },
+                secondary: { 
+                    label: "En savoir plus", 
+                    onClick: () => window.location.href = "/about-us" 
+                },
             }}
         />
     );

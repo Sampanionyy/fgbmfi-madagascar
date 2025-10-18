@@ -1,4 +1,4 @@
-import { BookOpen, Sparkles, Heart, Users, Globe, Zap, Eye, Star, Award, Target } from 'lucide-react';
+import { BookOpen, Sparkles, Heart, Users, Zap, Eye, Star, Award } from 'lucide-react';
 import ReusableHero from '../components/ReusableHero';
 
 const EcoleDeLaVision = () => {
@@ -76,6 +76,8 @@ const EcoleDeLaVision = () => {
             <ReusableHero
                 title="L'École de la Vision"
                 subtitle="Une expérience prophétique et spirituelle"
+                badge="Formation Spirituelle"
+                icon="info"
                 description='Une formation spirituelle née du réveil'
                 centered
             />

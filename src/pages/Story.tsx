@@ -1,4 +1,4 @@
-import { Globe, Users, Award, TrendingUp, Heart, Sparkles } from 'lucide-react';
+import { Users, TrendingUp, Heart, Sparkles } from 'lucide-react';
 import ReusableHero from '../components/ReusableHero';
 
 const Story = () => {
@@ -104,7 +104,8 @@ const Story = () => {
 
             <ReusableHero
                 variant="story"
-                icon="calendar"
+                badge="La création de FGBMFI Madagascar"
+                icon="globe"
                 title="Notre Histoire"
                 subtitle="Nos débuts"
                 description="De 2003 à 2025, une marche de foi, d'engagement persévérant et de grâce renouvelée."

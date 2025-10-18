@@ -1,12 +1,12 @@
 import React from "react";
-import { Calendar, Globe } from "lucide-react";
+import { Calendar, Globe, Info } from "lucide-react";
 
 interface HeroProps {
     variant?: "default" | "events" | "story" | "aboutus" | "howitworks" | "join";
     title: string;
     subtitle?: string;
     description?: string;
-    icon?: "calendar" | "globe" | React.ReactNode;
+    icon?: "calendar" | "globe" | "info" | React.ReactNode;
     gradient?: {
         from: string;
         via?: string;
@@ -46,6 +46,7 @@ const ReusableHero: React.FC<HeroProps> = ({
     const renderIcon = () => {
         if (icon === "calendar") return <Calendar className="w-5 h-5" />;
         if (icon === "globe") return <Globe className="w-5 h-5" />;
+        if (icon === "info") return <Info className="w-5 h-5" />;
         if (React.isValidElement(icon)) return icon;
         return null;
     };

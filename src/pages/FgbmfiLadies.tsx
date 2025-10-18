@@ -1,5 +1,4 @@
-import React from 'react';
-import { Users, Heart, Star, Award, Target } from 'lucide-react';
+import { Users, Heart, Star, Award } from 'lucide-react';
 import ReusableHero from '../components/ReusableHero';
 
 const FgbmfiLadies = () => {
@@ -30,6 +29,8 @@ const FgbmfiLadies = () => {
         <div className="min-h-screen bg-[#FFFFFF]">
             <ReusableHero
                 title="FGBMFI LADIES MADAGASCAR"
+                badge="Ladies"
+                icon="info"
                 subtitle="Inspiration, connexion et croissance pour les femmes d’affaires"
                 description="Encourager et équiper les femmes dans leur appel entrepreneurial tout en connaissant Jésus-Christ"
                 centered

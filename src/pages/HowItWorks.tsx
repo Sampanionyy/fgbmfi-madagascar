@@ -63,10 +63,11 @@ const HowItWorks = () => {
             {/* Hero Section */}
             <ReusableHero
                 variant="howitworks"
-                title="Comment fonctionnent FGBMFI ?"
+                title="Comment fonctionne FGBMFI ?"
+                badge="Fonctionnement des Chapitres"
+                icon="info"
                 subtitle='Découvrez les chapitres'
                 description="Découvrez le rôle essentiel des chapitres locaux dans le réseau FGBMFI, favorisant le partage d'expérience, le renforcement spirituel, le réseautage et le soutien mutuel parmi les hommes et femmes d'affaires chrétiens."
-                icon="globe"
                 centered
             />
 

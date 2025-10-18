@@ -1,4 +1,4 @@
-import { Globe, Target, Eye, Users, Briefcase, Heart, Sparkles, BookOpen, TrendingUp, Handshake } from 'lucide-react';
+import { Globe, Target, Eye, Users, Heart, Sparkles, BookOpen, TrendingUp, Handshake } from 'lucide-react';
 import ReusableHero from '../components/ReusableHero';
 
 const About = () => {
@@ -47,7 +47,8 @@ const About = () => {
             {/* Hero Section */}
             <ReusableHero
                 variant="aboutus"
-                icon="globe"
+                badge="Qu'est-ce que FGBMFI ?"
+                icon="info"
                 title="À propos de FGBMFI"
                 subtitle="Une fraternité mondiale d'hommes et de femmes d'affaires chrétiens"
                 description="Découvrez notre mission, vision et impact global"
