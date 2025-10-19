@@ -1,4 +1,4 @@
-import { BookOpen, Sparkles, Heart, Users, Zap, Eye, Star, Award } from 'lucide-react';
+import { BookOpen, Sparkles, Heart, Users, Zap, Eye, Star, Award, Globe } from 'lucide-react';
 import ReusableHero from '../components/ReusableHero';
 
 const EcoleDeLaVision = () => {
@@ -87,31 +87,37 @@ const EcoleDeLaVision = () => {
                 <div className="relative">
                     <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#C00000] rounded-full opacity-10 blur-3xl"></div>
                     <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#FFD700] rounded-full opacity-10 blur-3xl"></div>
-
-                    <div className="relative bg-[#E5E5E5] rounded-[3rem] shadow-2xl p-12 md:p-20 border border-[#C00000]">
-                        <div className="flex items-start gap-6 mb-10">
-                            <div className="flex-shrink-0 w-20 h-20 bg-[#C00000] rounded-3xl flex items-center justify-center shadow-xl transform rotate-6">
-                                <Eye className="w-10 h-10 text-[#FFFFFF]" />
-                            </div>
-                            <div>
-                                <h2 className="text-5xl font-black text-[#000000] mb-4 leading-tight">
-                                    Plus qu'une formation,
-                                    <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C00000] to-[#FFD700]">
-                                        une transformation
-                                    </span>
-                                </h2>
-                            </div>
+                    <div className="relative bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-2xl p-8 md:p-16 border border-slate-100 overflow-hidden">
+                        {/* Background pattern */}
+                        <div className="absolute top-0 right-0 w-64 h-64 opacity-5">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2"/>
+                                <line x1="20" y1="100" x2="180" y2="100" stroke="currentColor" strokeWidth="2"/>
+                                <line x1="100" y1="20" x2="100" y2="180" stroke="currentColor" strokeWidth="2"/>
+                            </svg>
                         </div>
 
-                        <div className="space-y-8 text-xl text-[#000000] leading-relaxed">
-                            <p className="text-2xl">
-                                L'École de la Vision n'est pas une école conventionnelle. C'est une <span className="font-bold text-[#C00000]">expérience prophétique et spirituelle</span>, destinée à réveiller la conscience du Corps de Christ et à activer chaque membre dans son appel divin.
-                            </p>
+                        <div className="relative">
+                            {/* Icon badge */}
+                            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl mb-6 shadow-lg">
+                                <Globe className="w-8 h-8 text-white" />
+                            </div>
 
-                            <div className="bg-gradient-to-r from-[#C00000] to-[#FFD700] p-[2px] rounded-2xl">
-                                <div className="bg-[#FFFFFF] p-8 rounded-2xl">
-                                    <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#C00000] to-[#FFD700] italic">
+                            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight">
+                                Plus qu'une formation,<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500"> une transformation</span>
+                            </h2>
+                            
+                            <div className="space-y-6">
+                                <div className="flex gap-4">
+                                    <div className="flex-shrink-0 w-1 bg-gradient-to-b from-yellow-400 to-red-500 rounded-full"></div>
+                                    <p className="text-xl text-slate-700 leading-relaxed">
+                                        <span className="font-semibold text-slate-900">L'École de la Vision n'est pas une école conventionnelle. C'est une</span> expérience prophétique et spirituelle <span className="font-semibold text-slate-900">, destinée à réveiller la conscience du Corps de Christ et à activer chaque membre dans son appel divin.</span>
+                                    </p>
+                                </div>
+                                
+                                <div className="flex gap-4">
+                                    <div className="flex-shrink-0 w-1 bg-gradient-to-b from-yellow-400 to-red-500 rounded-full"></div>
+                                    <p className="text-xl text-slate-700 leading-relaxed">
                                         "Être les mains, la voix et le cœur de Jésus-Christ dans la société."
                                     </p>
                                 </div>

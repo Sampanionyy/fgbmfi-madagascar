@@ -50,7 +50,7 @@ const About = () => {
                 badge="Qu'est-ce que FGBMFI ?"
                 icon="info"
                 title="À propos de FGBMFI"
-                subtitle="Une fraternité mondiale d'hommes et de femmes d'affaires chrétiens"
+                subtitle="Unité fraternelle"
                 description="Découvrez notre mission, vision et impact global"
                 centered
             />
