@@ -11,6 +11,7 @@ interface NavItem {
     label: string;
     hasDropdown: boolean;
     dropdownLinks?: DropdownLink[];
+    href?: string;
 }
 
 const Navbar = () => {
@@ -42,7 +43,7 @@ const Navbar = () => {
                 { label: 'FGBMFI Ladies', href: '/fgbmfi-ladies' },
             ]
         },
-        { label: 'Devenir membre', hasDropdown: false },
+        { label: 'Devenir membre', hasDropdown: false, href: '/join-us' },
     ];
 
     return (
@@ -62,19 +63,26 @@ const Navbar = () => {
                     <div className="hidden md:flex items-center space-x-8">
                         {navItems.map((item, idx) => (
                             <div key={idx} className="relative group">
-                                <button className="flex items-center gap-1 text-gray-700 hover:text-primary font-medium transition-colors py-2">
-                                    
-                                    <Link to="/join-us">{item.label}</Link>
-                                    {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
-                                </button>
-                                {item.hasDropdown && item.dropdownLinks && (
-                                    <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
-                                        {item.dropdownLinks.map((link, i) => (
-                                            <a key={i} href={link.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">
-                                                {link.label}
-                                            </a>
-                                        ))}
-                                    </div>
+                                {item.hasDropdown ? (
+                                    <>
+                                        <button className="flex items-center gap-1 text-gray-700 hover:text-primary font-medium transition-colors py-2">
+                                            {item.label}
+                                            <ChevronDown className="w-4 h-4" />
+                                        </button>
+                                        {item.dropdownLinks && (
+                                            <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                                                {item.dropdownLinks.map((link, i) => (
+                                                    <Link key={i} to={link.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-white transition-colors">
+                                                        {link.label}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </>
+                                ) : (
+                                    <Link to={item.href || '#'} className="text-gray-700 hover:text-primary font-medium transition-colors py-2">
+                                        {item.label}
+                                    </Link>
                                 )}
                             </div>
                         ))}
@@ -108,17 +116,25 @@ const Navbar = () => {
                     <div className="px-4 py-6 space-y-4">
                         {navItems.map((item, idx) => (
                             <div key={idx}>
-                                <a href="#" className="block text-gray-700 hover:text-primary font-medium">
-                                    {item.label}
-                                </a>
-                                {item.hasDropdown && item.dropdownLinks && (
-                                    <div className="pl-4 mt-2 space-y-1">
-                                        {item.dropdownLinks.map((link, i) => (
-                                            <a key={i} href={link.href} className="block text-gray-600 hover:text-primary font-medium">
-                                                {link.label}
-                                            </a>
-                                        ))}
-                                    </div>
+                                {item.hasDropdown ? (
+                                    <>
+                                        <a href="#" className="block text-gray-700 hover:text-primary font-medium">
+                                            {item.label}
+                                        </a>
+                                        {item.dropdownLinks && (
+                                            <div className="pl-4 mt-2 space-y-1">
+                                                {item.dropdownLinks.map((link, i) => (
+                                                    <Link key={i} to={link.href} className="block text-sm text-gray-600 hover:text-primary">
+                                                        {link.label}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </>
+                                ) : (
+                                    <Link to={item.href || '#'} className="block text-gray-700 hover:text-primary font-medium">
+                                        {item.label}
+                                    </Link>
                                 )}
                             </div>
                         ))}
