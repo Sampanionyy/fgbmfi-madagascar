@@ -41,7 +41,7 @@ const AboutSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-3xl transform rotate-3"></div>
                         <div className="relative bg-white rounded-3xl p-8 shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-300">
                             <div className="aspect-square bg-gradient-to-br from-surface to-surface/50 rounded-2xl flex items-center justify-center">
-                                <img src="/photo2.jpeg" alt="About FGBMFI" className="w-48 h-48 object-cover rounded-2xl shadow-lg" />
+                                <img src="/images/photo2.jpeg" alt="About FGBMFI" className="w-48 h-48 object-cover rounded-2xl shadow-lg" />
                             </div>
                             <div className="mt-6 text-center">
                                 <div className="text-4xl font-bold text-primary">50+</div>

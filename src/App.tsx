@@ -11,6 +11,7 @@ import HowItWorks from "./pages/HowItWorks";
 import EcoleDeLaVision from "./pages/EcoleDeLaVision";
 import FgbmfiLadies from "./pages/FgbmfiLadies";
 import JoinUs from "./pages/JoinUs";
+import ImageGallery from "./pages/ImageGallery";
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
                         element={
                             <>
                                 <HeroSection />
+                                <ImageGallery />
                                 <AboutSection />
                             </>
                         }
