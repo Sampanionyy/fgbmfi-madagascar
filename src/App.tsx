@@ -12,6 +12,7 @@ import EcoleDeLaVision from "./pages/EcoleDeLaVision";
 import FgbmfiLadies from "./pages/FgbmfiLadies";
 import JoinUs from "./pages/JoinUs";
 import ImageGallery from "./pages/ImageGallery";
+import Testimonials from "./pages/Testimonials";
 
 export default function App() {
     return (
@@ -37,6 +38,7 @@ export default function App() {
                     <Route path="/ecole-de-la-vision" element={<EcoleDeLaVision />} />
                     <Route path="/fgbmfi-ladies" element={<FgbmfiLadies />} />
                     <Route path="/join-us" element={<JoinUs />} />
+                    <Route path="/testimonials" element={<Testimonials />} />
                 </Routes>
                 <Footer />
             </div>

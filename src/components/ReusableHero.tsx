@@ -2,7 +2,7 @@ import React from "react";
 import { Calendar, Globe, Info } from "lucide-react";
 
 interface HeroProps {
-    variant?: "default" | "events" | "story" | "aboutus" | "howitworks" | "join";
+    variant?: string; 
     title: string;
     subtitle?: string;
     description?: string;

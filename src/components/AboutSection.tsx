@@ -42,7 +42,7 @@ const AboutSection = () => {
                         <div className="relative bg-white rounded-3xl p-8 shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-300">
                             <div className="h-80 bg-gradient-to-br from-surface to-surface/50 rounded-2xl overflow-hidden">
                                 <img 
-                                    src="/images/photo2.jpeg" 
+                                    src="/src/assets/images/photo2.jpeg" 
                                     alt="About FGBMFI" 
                                     className="w-full h-full object-cover"
                                 />
